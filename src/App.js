@@ -27,8 +27,10 @@ const App = () => {
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
 
   const addExpenseData = (expenseData) => {
-    setExpenses((prevExpenses) => [...prevExpenses, expenseData]);
+    setExpenses((prevExpenses) => [expenseData, ...prevExpenses]);
   };
+
+  console.log(expenses);
 
   return (
     <div>
