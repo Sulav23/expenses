@@ -30,8 +30,6 @@ const App = () => {
     setExpenses((prevExpenses) => [expenseData, ...prevExpenses]);
   };
 
-  console.log(expenses);
-
   return (
     <div>
       <h2>Let's get started!</h2>
