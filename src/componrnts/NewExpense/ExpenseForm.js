@@ -22,6 +22,7 @@ const ExpenseForm = (props) => {
     e.preventDefault();
 
     const expenseDate = {
+      id: Math.random() * Math.random(),
       title,
       amount,
       date: new Date(date),
